@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"> <!-- Sets the character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive behavior -->
+  <title>My Portfolio</title> <!-- Title of the webpage -->
+  <!-- Link to Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Link to custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Link to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Link to JavaScript file -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Home Section with Video Background -->
+  <section id="home" class="relative h-screen flex items-center justify-center text-white fade-in">
+    <video autoplay muted loop id="bg-video" class="absolute w-full h-full object-cover">
+      <source src="images and videos/5680034-hd_1920_1080_24fps.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="relative z-10 text-center">
+      <h1 class="text-4xl font-bold mb-4 animated fadeInDown">Welcome to My Portfolio</h1>
+      <p class="text-lg font-bold animated fadeInUp">Explore my projects and skills</p>
+    </div>
+    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black opacity-50"></div> <!-- Gradient overlay -->
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="bg-gradient-to-r from-yellow-400 to-pink-500 text-gray-800 py-20 px-6 fade-in">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-6 animated fadeIn">About Me</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <p class="mb-4">Hello there! My name is Nanduri Srivatsa, and I'm a first-year polytechnic student with a passion for programming and development. I specialize in languages like C and Python, where I've honed my skills to become a proficient programmer and developer. One of my key strengths lies in my expertise with AI tools. I have a comprehensive understanding of various AI technologies, allowing me to leverage them effectively to maximize productivity in my work. Whether it's implementing machine learning algorithms or developing AI-driven solutions, I'm always up for the challenge. I stay updated with the latest advancements in technology and AI tools, ensuring that I'm well-equipped to tackle any project that comes my way. With my dedication and enthusiasm for learning, I'm eager to collaborate with you to create wonders together. Let's embark on this journey of innovation and creativity!</p>
+        </div>
+        <div class="flex justify-center">
+          <img src="images and videos/generate-a-logo-for-an-instagram-profile-pic-with--dwGcMpCrTjWcTWTeuwS_ZA-8nc9ipEqRG-tM0mRc3-RVA.jpeg" alt="Your Name" class="rounded-full w-48 animated fadeInRight"> <!-- Profile picture -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-gradient-to-r from-green-400 to-blue-500 text-gray-800 py-20 px-6 fade-in">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-6 animated fadeIn">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Projects</h3>
+          <ul class="list-disc pl-6 mb-4">
+            <li class="animated fadeIn">
+              COFEE SHOP LOGO GENERATION <!-- Project name -->
+              <img src="images and videos/a-playful-and-vibrant-cartoon-logo-featuring-a-hum-qm0a1bM3Sem9YeufIxd5Vw-YNE3EpXhQbOXuPvXG5ZFNw.jpeg" alt="Project 1 Image" class="project-image hover:scale-105 transition-transform duration-300">
+            </li>
+            <li class="animated fadeIn" style="animation-delay: 0.3s;">
+              Project 2 <!-- Project name -->
+              <img src="path/to/your/image2.jpg" alt="Project 2 Image" class="project-image hover:scale-105 transition-transform duration-300">
+            </li>
+            <li class="animated fadeIn" style="animation-delay: 0.6s;">
+              Project 3 <!-- Project name -->
+              <img src="path/to/your/image3.jpg" alt="Project 3 Image" class="project-image hover:scale-105 transition-transform duration-300">
+            </li>
+          </ul>
+        </div>
+        <div>
+          <!-- Video -->
+          <video width="100%" controls class="animated fadeInUp">
+            <source src="path/to/your/video.mp4" type="video/mp4"> <!-- Path to your video -->
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gradient-to-r from-red-400 to-purple-500 text-white py-20 px-6 fade-in">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-6 animated fadeIn">Contact Me</h2>
+      <p class="mb-8 animated fadeInUp">Feel free to reach out to me using the form below:</p>
+      <!-- Embedded Google Form -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeA4WgCn6Gu1XPY65S-tYGX-5KpHtZfXqpTzcHSFetXbznH1A/viewform?usp=sf_link" width="640" height="750" frameborder="0" marginheight="0" marginwidth="0" class="animated fadeIn">Loading…</iframe>
+    </div>
+  </section>
+</body>
+
+</html>

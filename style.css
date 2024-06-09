@@ -1,0 +1,146 @@
+/* Import local fonts */
+@font-face {
+    font-family: 'Ghibo Talk';
+    src: url('C:/Users/nandu/Documents/Ghibo Talk.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'FontBleach';
+    src: url('C:/Users/nandu/Documents/FontBleach.ttf') format('truetype');
+  }
+  
+  /* Use Ghibo Talk as the primary font and FontBleach as secondary */
+  body {
+    font-family: 'Ghibo Talk', 'Sansita', sans-serif; /* Primary font */
+  }
+  
+  /* General styles */
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Fade-in effect */
+  }
+  
+  .fade-in.visible {
+    opacity: 1; /* Make elements visible with fade-in */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  .fadeInDown {
+    animation-name: fadeInDown;
+  }
+  
+  .fadeInUp {
+    animation-name: fadeInUp;
+  }
+  
+  .fadeInRight {
+    animation-name: fadeInRight;
+  }
+  
+  /* Home Section styles */
+  #home {
+    position: relative; /* Position relative for absolute positioning of child elements */
+  }
+  
+  #bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure video covers entire background */
+    z-index: -1; /* Position behind content */
+  }
+  
+  #home .bg-gradient-to-b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* About Me Section styles */
+  #about {
+    padding: 50px 0; /* Padding for top and bottom */
+    background: linear-gradient(to right, #fffd82, #ff82ff); /* Gradient background */
+  }
+  
+  #about h2 {
+    color: #04667a; /* Caribbean Current font color */
+  }
+  
+  #about p {
+    font-family: 'FontBleach', 'Sansita', sans-serif; /* Secondary font */
+  }
+  
+  /* Skills Section styles */
+  #skills {
+    padding: 50px 0; /* Padding for top and bottom */
+    background: linear-gradient(to right, #81d2c7, #04667a); /* Gradient background */
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  /* Contact Section styles */
+  #contact {
+    padding: 50px 0; /* Padding for top and bottom */
+    background: linear-gradient(to right, #b57f50, #6b5ca5); /* Gradient background */
+  }
+  
+  #contact h2 {
+    color: #fff; /* White font color */
+  }
+  
+  #contact p {
+    font-family: 'Sansita', sans-serif; /* Default font */
+  }
+  
+  iframe {
+    border: none;
+  }
+  
+  /* Hover effects */
+  h1:hover, h2:hover, p:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-image:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    transition: transform 0.3s ease-in-out;
+  }
+  
